@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  --bs-body-font-family: 'IBM Plex Sans',serif;
+  margin: 0;
+  padding: 0;
+}
+.no-caret::before {
+  display: none !important;
+}
+
+
+@media (min-width: 1024px ) {
+  .post-feed {
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .post-feed::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
