@@ -10,13 +10,13 @@ import {
 } from "../../assets";
 
 const Header = () => {
+  const [search, setSearch] = useState("");
+
   // If the screen size is less than or equal to 1024px, the header will not be displayed.
   const { isMobile, openModal, isLogined } = useContext(AppContext);
   if (isMobile) {
     return null;
   }
-
-  const [search, setSearch] = useState("");
 
   return (
     <Navbar className="py-3 px-5">

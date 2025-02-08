@@ -3,7 +3,6 @@ import { AppContext } from "../../lib/Context";
 
 // Bootstrap imports
 import {
-  Modal,
   Button,
   Alert,
   Row,

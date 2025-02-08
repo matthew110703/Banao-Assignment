@@ -3,7 +3,6 @@ import { AppContext } from "../../lib/Context";
 
 // Bootstrap imports
 import {
-  Modal,
   Button,
   Alert,
   Row,
@@ -109,12 +108,13 @@ const SignUpForm = () => {
                   <Image src={google} width={16} height={16} />
                   <span>Sign in with Google</span>
                 </Button>
-                <p
-                  className="mt-3 text-center w-75 mx-auto fw-semibold"
+                <a
+                  href="#"
+                  className="text-decoration-none mt-3 text-center text-dark w-75 mx-auto fw-semibold"
                   style={{ fontSize: "0.85rem" }}
                 >
                   Forgot Password?
-                </p>
+                </a>
               </div>
             </form>
           </Col>

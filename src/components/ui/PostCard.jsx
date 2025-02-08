@@ -2,14 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../lib/Context";
 
 // bootstrap imports
-import {
-  Button,
-  Card,
-  Dropdown,
-  DropdownButton,
-  Image,
-  ListGroup,
-} from "react-bootstrap";
+import { Button, Card, Dropdown, Image } from "react-bootstrap";
 import {
   dateIcon,
   locationIcon,

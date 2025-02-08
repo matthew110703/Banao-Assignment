@@ -1,4 +1,10 @@
-import { createContext, useState, useEffect, useMemo } from "react";
+import {
+  createContext,
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+} from "react";
 
 export const AppContext = createContext();
 
@@ -21,13 +27,16 @@ export const AppProvider = ({ children }) => {
     };
   }, []);
 
-  const openModal = (modalType) => {
-    setShowModal({ ...showModal, [modalType]: true });
-  };
+  const openModal = useCallback(
+    (modalType) => {
+      setShowModal({ ...showModal, [modalType]: true });
+    },
+    [showModal]
+  );
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setShowModal({ login: false, signup: false });
-  };
+  }, []);
 
   const contextValue = useMemo(
     () => ({
